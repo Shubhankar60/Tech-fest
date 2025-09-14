@@ -12,7 +12,7 @@ import electriviaImg from "./assets/ElectRivia.jpeg";
 import recallRushImg from "./assets/recallRush.jpeg";
 import survivalArenaImg from "./assets/surArena.jpeg"; 
 import tryOGameImg from "./assets/tryogame.jpeg";
-import bgmitournamentImg from "./assets/bgmiEE.jpeg";
+import bgmitournamentImg from "./assets/BgmiEE.jpeg";
 import pictostageImg from "./assets/pictosstage.jpeg";
 import FreefireImg from "./assets/freefire.jpeg"; 
 import photographyImg from "./assets/photography.jpeg";
