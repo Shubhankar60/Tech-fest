@@ -7,7 +7,7 @@ import codeQuestImg from "./assets/Codeqs.png";
 import editxImg from "./assets/editx.jpeg";
 import rideToGloryImg from "./assets/rideToglory.jpeg";
 import riddelToRigImg from "./assets/RideltoRig.jpeg";
-import startupIonImg from "./assets/startupion.jpeg";
+import startupIonImg from "./assets/startup.jpeg";
 import electriviaImg from "./assets/ElectRivia.jpeg";
 import recallRushImg from "./assets/recallRush.jpeg";
 import survivalArenaImg from "./assets/surArena.jpeg"; 
