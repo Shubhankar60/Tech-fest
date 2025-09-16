@@ -21,6 +21,7 @@ import sitNwinImg from "./assets/sitandwin.jpeg";
 import pickActGuessImg from "./assets/pickact.jpeg";
 import dhoondBarabarDhoondImg from "./assets/dhond.jpeg";
 import whoIsTheKatilImg from "./assets/katil.jpeg";
+import techQuizImg from "./assets/techquiz.jpeg";
 
 
 export default function TechFestApp() {
@@ -261,7 +262,7 @@ export default function TechFestApp() {
       whatsappGroup: "https://chat.whatsapp.com/EM0laf0le8WIANIC1wAXpj?mode=ems_copy_t",
        googleForm: "https://docs.google.com/forms/d/e/1FAIpQLSeFqyFdluXWai7r_F4q_IF5bH09Up4VfdmQkM8w9He4qj08xA/viewform?usp=dialog",
       tags: ["Team", "Design"],
-      image: techhuntImg,
+      image: techQuizImg,
     },
     
     
@@ -496,6 +497,34 @@ export default function TechFestApp() {
           </motion.div>
         )}
       </AnimatePresence>
+      {/* Add Your Event Section */}
+<section className="max-w-4xl mx-auto my-16 bg-white rounded-2xl shadow-lg p-8 text-center">
+  <h2 className="text-2xl font-bold text-sky-700 mb-4">Want to Add Your Event?</h2>
+  <p className="text-slate-600 mb-6">
+    If you’d like to include your event in <strong>Utkarsh 4.0</strong>, kindly contact us with your event details.
+  </p>
+
+  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+    {/* WhatsApp Button */}
+    <a
+      href="https://wa.me/7630871689" // 🔹 Replace with your WhatsApp number
+      target="_blank"
+      rel="noreferrer noopener"
+      className="px-6 py-3 rounded-lg bg-green-600 text-white font-medium shadow hover:bg-green-700"
+    >
+      📲 Contact on WhatsApp
+    </a>
+
+    {/* Email Button */}
+    <a
+      href="mailto:sbk838152@gmail.com" // 🔹 Replace with your email
+      className="px-6 py-3 rounded-lg bg-sky-600 text-white font-medium shadow hover:bg-sky-700"
+    >
+      ✉️ Send Event via Email
+    </a>
+  </div>
+</section>
+
       {/* Footer */}
 <footer className="mt-16 bg-sky-700 text-white py-8">
   <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 gap-8">
