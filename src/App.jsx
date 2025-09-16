@@ -228,28 +228,34 @@ export default function TechFestApp() {
   const [active, setActive] = useState(null);
 
   const filtered = useMemo(() => {
-    let list = EVENTS.filter(
-      (e) =>
-        (selectedDept === "All" || e.dept === selectedDept) &&
-        (e.title.toLowerCase().includes(query.toLowerCase()) ||
-          e.short.toLowerCase().includes(query.toLowerCase()) ||
-          e.tags.join(" ").toLowerCase().includes(query.toLowerCase()))
+  let list = EVENTS.filter((e) => {
+    const title = e.title?.toLowerCase() || "";
+    const short = e.short?.toLowerCase() || "";
+    const tags = Array.isArray(e.tags) ? e.tags.join(" ").toLowerCase() : "";
+
+    return (
+      (selectedDept === "All" || e.dept === selectedDept) &&
+      (title.includes(query.toLowerCase()) ||
+        short.includes(query.toLowerCase()) ||
+        tags.includes(query.toLowerCase()))
     );
+  });
 
-    if (sortBy === "date") {
-      list.sort((a, b) => new Date(a.date) - new Date(b.date));
-    } else if (sortBy === "seats") {
-      list.sort((a, b) => {
-        const seatsA = a.seats === "infinity" ? Infinity : Number(a.seats);
-        const seatsB = b.seats === "infinity" ? Infinity : Number(b.seats);
-        return seatsB - seatsA;
-      });
-    } else if (sortBy === "title") {
-      list.sort((a, b) => a.title.localeCompare(b.title));
-    }
+  if (sortBy === "date") {
+    list.sort((a, b) => new Date(a.date) - new Date(b.date));
+  } else if (sortBy === "seats") {
+    list.sort((a, b) => {
+      const seatsA = a.seats === "infinity" ? Infinity : Number(a.seats);
+      const seatsB = b.seats === "infinity" ? Infinity : Number(b.seats);
+      return seatsB - seatsA;
+    });
+  } else if (sortBy === "title") {
+    list.sort((a, b) => a.title.localeCompare(b.title));
+  }
 
-    return list;
-  }, [query, selectedDept, sortBy]);
+  return list;
+}, [query, selectedDept, sortBy]);
+
 
   const cardVariants = {
     hidden: { opacity: 0, y: 30, scale: 0.8 },
