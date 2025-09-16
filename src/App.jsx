@@ -18,7 +18,9 @@ import FreefireImg from "./assets/freefire.jpeg";
 import photographyImg from "./assets/photography.jpeg";
 import techhuntImg from "./assets/techhunt.jpeg";
 import sitNwinImg from "./assets/sitandwin.jpeg";
-
+import pickActGuessImg from "./assets/pickact.jpeg";
+import dhoondBarabarDhoondImg from "./assets/dhond.jpeg";
+import whoIsTheKatilImg from "./assets/katil.jpeg";
 
 
 export default function TechFestApp() {
@@ -78,8 +80,8 @@ export default function TechFestApp() {
       short: "Show creativity",
       date: "2025-10-13",
       seats: 50,
-      googleForm: "https://forms.gle/example5",
-       whatsappGroup: "https://chat.whatsapp.com/yourGroupLink",
+      googleForm: "https://forms.gle/eeb4z77K9Fd1F2jD8",
+       whatsappGroup: "https://chat.whatsapp.com/D1ZqOM4QyA8Ic9EbCJy1b9?mode=ems_copy_c",
       tags: ["Team", "Design"],
       image: riddelToRigImg,
     },
@@ -90,8 +92,8 @@ export default function TechFestApp() {
       short: "Dream it, build it, scale it",
       date: "2025-10-13",
       seats: 50,
-      googleForm: "https://forms.gle/example6",
-       whatsappGroup: "https://chat.whatsapp.com/yourGroupLink",
+      googleForm: "https://docs.google.com/forms/d/e/1FAIpQLSeH2KtRdgmaGDwXpU_OTqCS5hWi_0OrHv883C4r470JC0fROA/viewform?usp=dialog",
+       whatsappGroup: "https://chat.whatsapp.com/IySbRbli3NC2EiNsE0gC86?mode=ems_copy_c",
       tags: ["Team", "Design"],
       image: startupIonImg,
     },
@@ -213,7 +215,55 @@ export default function TechFestApp() {
       tags: ["Team", "Design"],
       image: sitNwinImg,
     },
-
+    {
+      id: "ev17",
+      title: "PICK, ACT & GUESS",
+      dept: "Civil Engineering",
+      short: "",
+      date: "2025-10-13",
+      seats: 50,
+      googleForm: "https://bit.ly/PICKACTGUESS-UTKARSHCIVIL",
+       whatsappGroup:"https://chat.whatsapp.com/DSSc4lQVw1K85eeYrASqxK",
+      tags: ["Team", "Design"],
+      image: pickActGuessImg,
+    },
+    {
+      id: "ev18",
+      title: "DHOOND BARABAR DHOOND-2.0",
+      dept: "Electronics & communication",
+      short: "",
+      date: "2025-10-13",
+      seats: 50,
+      whatsappGroup:"https://chat.whatsapp.com/FgPH12farfPEVuHKdzrXFX?mode=ems_copy_t",
+       googleForm: "https://forms.gle/invbVMMyifFwswXG9",
+      tags: ["Team", "Design"],
+      image: dhoondBarabarDhoondImg,
+    },
+    {
+      id: "ev19",
+      title: "Who is the  कातिल ?",
+      dept: "Electronics & communication",
+      short: "",
+      date: "2025-10-13",
+      seats: 50,
+      whatsappGroup:"https://docs.google.com/forms/d/e/1FAIpQLSf2fZm2UR3PCE9Qtr20pSBOHdxsMnOCQfkHuiiPno9_N2FfnQ/viewform?usp=header",
+       googleForm: "https://chat.whatsapp.com/GyZTFhNBSnZGxKry8Rezeh?mode=ems_copy_t",
+      tags: ["Team", "Design"],
+      image: whoIsTheKatilImg,
+    },
+    {
+      id: "ev15",
+      title: "Tech Quiz",
+      dept: "Central",
+      short: "",
+      date: "2025-10-13",
+      seats: 50,
+      whatsappGroup: "https://chat.whatsapp.com/EM0laf0le8WIANIC1wAXpj?mode=ems_copy_t",
+       googleForm: "https://docs.google.com/forms/d/e/1FAIpQLSeFqyFdluXWai7r_F4q_IF5bH09Up4VfdmQkM8w9He4qj08xA/viewform?usp=dialog",
+      tags: ["Team", "Design"],
+      image: techhuntImg,
+    },
+    
     
   ];
 
