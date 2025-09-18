@@ -317,6 +317,7 @@ export default function TechFestApp() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-sky-100 via-white to-sky-50 p-6">
      {/* Header */}
+     
 <motion.header
   className="max-w-6xl mx-auto mb-12 text-center px-4"
   initial={{ y: -50, opacity: 0 }}
@@ -376,7 +377,35 @@ export default function TechFestApp() {
     UTKARSH 4.0 brings together students from all disciplines to showcase their talents, participate
     in innovative competitions, and experience a celebration of technology, creativity, and collaboration.
     Join us for an unforgettable event filled with workshops, competitions, and exciting projects!
+  
   </motion.p>
+
+  {/* Inter-College Event Section */}
+      <motion.section
+        className="max-w-5xl mx-auto mt-16 mb-12 bg-white rounded-2xl shadow-lg p-8 text-center"
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, type: "spring" }}
+      >
+        <h2 className="text-3xl font-bold text-sky-700 mb-4">
+          🌐 Inter-College Tech Fest 2025
+        </h2>
+        <p className="text-slate-600 text-lg leading-relaxed mb-6">
+          The Inter-College Tech Fest is a collaborative event where students from 
+          different colleges come together to showcase their creativity, innovation, 
+          and technical skills. From hackathons to gaming battles, it’s a platform 
+          to compete, learn, and grow at a bigger stage.
+
+        </p>
+        <a
+          href="https://utkarshtit.vercel.app/?fbclid=PAb21jcAM5WDJleHRuA2FlbQIxMQABpww6XQIc7KaqkwN0YAxJ0wDClRRgb1CdM1Pd-1nJYxmRlMSMNR2rf76zDNcL_aem_l8Fy3oSVZOO3OY2dhLQMWg" // 🔹 Replace with actual site link
+          target="_blank"
+          rel="noreferrer noopener"
+          className="px-6 py-3 rounded-lg bg-sky-600 text-white font-medium shadow hover:bg-sky-700"
+        >
+          Visit Inter-College Site
+        </a>
+      </motion.section>
 </motion.header>
 
 
